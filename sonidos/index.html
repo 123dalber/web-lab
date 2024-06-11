@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            height: 445px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>te reto a apretarme</h1>
+    <img src="imagenes/audio.webp" alt="steve damage" onclick="playAudio('./audios/minecraf.mp3')" >
+<br>
+<br>
+<br>
+    <img src="../sonidos/imagenes/gato.jpg" alt="gato" onclick="playAudio('./audios/meow.mp3')" >
+<br>
+<br>
+<br>
+    <img src="../sonidos/imagenes/mario bros.png" alt="mario" onclick="playAudio('./audios/mario tuberia.mp3')" >
+<br>
+<br>
+<br>
+    <img src="../sonidos/imagenes/pac man.webp" alt="pac man" onclick="playAudio('./audios/pacman.mp3')" >
+
+</body>
+<script>
+    function playAudio(ubicacion_audio) {
+        const audio = new Audio(ubicacion_audio)
+        audio.play()
+    }
+
+
+</script>
+
+</html>
